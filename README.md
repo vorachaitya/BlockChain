@@ -28,3 +28,7 @@ Blockchain is a distributed immutable ledger which is completely transparent.
   > * **Fast Computation** :The algorithm should be fast else entire time would be spent just in hashing instead of building the blockchain.
   > * **Withstand collisions** :It shouldn't be hacked easily.
   > * **Avalanche Effect** :If we make even small change in input,the hash should change for the new input data,i.e,no two inputs should have the same hash.
+
+**Immutable Ledger**
+
+Since blockchain is distributed network,let's suppose we have A<-B<-C<-D<-E chain.Now if a hacker attacks 'C',then hash of 'C' will change.Since 'D' is linked to prev hash of 'C' and since hash of 'C' has been changed,due to avalanche effect,now 'D' cannot match new hash of 'C' with old original hash.Thus,due to avalanche effect,'D' and 'E' will be corrupted.This will soon be known by other computer as it is distributed network,and the corrupted chain will be restored to original data by other computers.Thus attack by hackers would be saved.
