@@ -15,3 +15,11 @@ Blockchain is a distributed immutable ledger which is completely transparent.
 - Smart Contract
 - International Wire Transfer
 - Healthcare System
+
+**Hashing Algorithm**
+
+- Each block is identified by it's own unique **_hash_**.Each block also stores hash of the previous block known as **_prev hash_**.Prev hash of the first block(genesis block) is always _0_.
+- Hashing is done using **_SHA256_** algorithm.The entered data is encrypted using this algorithm.It has 64 hexadecimal chahracters each of 4 bits.So,in total it has 64\*4=256 bits.
+
+* Five requirements of hashing algorithm are as follows:
+  _1.One way_
