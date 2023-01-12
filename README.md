@@ -42,5 +42,14 @@ Now let's suppose hacker hacks all blocks CDE of chain A<-B<-C<-D<-E of peer 'M'
 **Blockchain Mining**
 
 Blockchain mining creates an environment of trust and security.
+
 It's shown using following steps:
 Transaction->Solve Mathematical problem->Miner solved problem first->Miner verify the validity->Block is added
+
+**Consensus Protocol**
+
+**_Proof of work_**:When miner wants to add a block to to the chain,it has to first solve a mathematical problem which is too complex,time consuming,consumes lot of electricity.It it solves it successfully,it is rewarded with a bitcoin. Now,other peers also verify this block before adding to their chain whether it has followed all the rules of mining correctly or not.If yes,then miner is again awarded with the incentive. Thus,if miner has to take utmost care while mining and it cannot perform any malicious activity because if caught,it won't get any reward or incentive amd will have to bare loss.Thus,solving mathematical problem is proof of work.Verification of new block by peer network is fast and not time consuming.
+
+**_Longest Chain Rule(Competing Chain Problem)_**:It will accept only those blockchain which will have the longest blockchain.Thus,whichever network has longest blockchain will be considered valid and blockchain of other network will be discarded.
+
+The Consensus Protocol of Blockchain is much better than the Byzantine Fault Tolerance as Consensus Protocol only needs a 51% majority while Byzantine Fault Tolerance needs approximately 66%.All the transaction in the Orphan block will be dropped and the miner that had mined will not get any reward.So that's why wait for the 6 confirmations before assuming payment to be successful.
