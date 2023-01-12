@@ -8,6 +8,7 @@
 **What is Blockchain?**
 
 Blockchain is a distributed immutable ledger which is completely transparent.
+
 **Application of Blockchain**
 
 - Product Tracking
