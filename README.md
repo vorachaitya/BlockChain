@@ -1,5 +1,7 @@
 # BlockChain
 
+# **_Module A:Blockchain_**
+
 **Why to study Blockchain?**
 
 - It is a disruptive technology, i.e,it has the power to change a traditional approach into a new enhanced technology.
@@ -53,3 +55,13 @@ Transaction->Solve Mathematical problem->Miner solved problem first->Miner verif
 **_Longest Chain Rule(Competing Chain Problem)_**:It will accept only those blockchain which will have the longest blockchain.Thus,whichever network has longest blockchain will be considered valid and blockchain of other network will be discarded.
 
 The Consensus Protocol of Blockchain is much better than the Byzantine Fault Tolerance as Consensus Protocol only needs a 51% majority while Byzantine Fault Tolerance needs approximately 66%.All the transaction in the Orphan block will be dropped and the miner that had mined will not get any reward.So that's why wait for the 6 confirmations before assuming payment to be successful.
+
+# **_Module B:Cryptocurrency_**
+
+**What is Bitcoin?**
+
+Bitcoin is the first cryptocurrency to be invented in the year 2008.Blockchain is a technology whereas Bitcoin is a protocol that tells us how to work on blockchain as a technology,i.e,when miners should be rewarded,which consensus protocols should be followed,etc.
+
+**What is Bitcoin's Monetary Policy?**
+
+It is necessary to maintain the supply of money.Supply cap of Bitcoin is 21 million.Bitcoin uses Halving technique,i.e,every 4 years the new number of bitcoins that can be produced are half the number than those before 4years.Thus,no more bitcoins can be produced after the year 2140.Block frequency states that on an average,it will take 10 minutes to create a new block.
