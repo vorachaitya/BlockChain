@@ -71,3 +71,30 @@ It is necessary to maintain the supply of money.Supply cap of Bitcoin is 21 mill
 The hash of the block is generated when we add block number,data and prev hash in the SHA256 algorithm which gives us the hash of the block.Mathematical problem to be solved by the miner is to generate this hash,i.e, miners are given a target value. They have to generate hash in such way that it is less than or equal to the given target value. If hash is not less or equal to target value,then block cannot exist and miner cannot mine the block.If they reach the target value,then block is mined successfully.
 
 Nonce is responsible for generating the hash.Different values of nonce have different hash values,out of which one hash value of some nonce will match the target value and block will be mined successfully.Now,we will add nonce along with block number,data and prev hash in the SHA256 algorithm which will gives us the hash value of the block.Thus,nonce simply is a mathematical number which miners use to solve a mathematical problem.When they find a nonce that reaches the target value,mining is stopped and block is added successfully.
+
+**_Target_** :Target is a number used in mining.It is a number that block hash must be below for the block to be added on to the blockchain.The target adjusts every 2016 blocks(roughly two weeks) to try and ensure that blocks are mined once every 10 minutes on average.
+
+**CPU vs GPU vs ASIC**
+
+Hash rates are as follows:
+
+> - CPUs < 10 MH/s
+> - GPUs < 1 GH/s
+> - ASIC > 1000 GH/s
+
+**Mining Pools**
+
+Mining pool creates a pool of miner's network where they together solve a problem.Thus,mining power of each individual increases by which they can now compete with big miners in the market.Also those individuals who don't know mining can be a part of the mining pool by paying a minimal fee.Also if a mining network has earned a reward,reward won't be split equally amongst it's miners.Reward would be distributed based on the hashing power of every individual of the mining pool,i.e, miner with more hashing power gets more reward because it has generated more hashes to meet the target thereby contributing more.
+
+Also,the different network don't work on the same mathematical problem else even if one network solves the problem,it will get rewarded and the power,electricity of other networks(mining pools) would be wasted.Instead,every network(mining pool) is assigned a range of nonce and they solve mathematical problem based by changing nonce in that range only.
+
+**Nonce Range**
+
+Nonce is a 32 bit number.
+
+> - Range of Nonce is 0 to 2^32-1=0 to 4x10^9(4 billion).
+> - Thus,we can produce 4 billion hashes with help of 4 billion Nonce.
+> - Total number of possible hashes is 64^16=10^77.
+>   Thus,we have 10^77 possible hashes but we can only generate 4 billion nonces.
+
+So what the miners do when all the nonce get exhausted and miners have not hit the target?
