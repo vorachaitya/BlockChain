@@ -127,12 +127,16 @@ The following are UTXOs:
 > - Raj -> Me 0.3 BTC
 > - Alice -> Me 0.7 BTC
 > - Bob -> Me 0.3 BTC
->   Now let's suppose I want to buy a coffee of 0.5 BTC.So,I will choose UTXO of Alice.0.5 BTC will be spent for coffee and remaining 0.2 BTC will be returned back to me.Thus,updated UTXOs are:
+
+Now let's suppose I want to buy a coffee of 0.5 BTC.So,I will choose UTXO of Alice.0.5 BTC will be spent for coffee and remaining 0.2 BTC will be returned back to me.Thus,updated UTXOs are:
+
 > - Arjun -> Me 0.4 BTC
 > - Raj -> Me 0.3 BTC
 > - Bob -> Me 0.3 BTC
 > - Me -> Me 0.2 BTC
->   But in actual,I get only 0.1 BTC.The remaining 0.1 BTC is spent in the form of Transaction fee.Transaction fee is given to miners.Thus,the actual UTXOs are shown below:
+
+But in actual,I get only 0.1 BTC.The remaining 0.1 BTC is spent in the form of Transaction fee.Transaction fee is given to miners.Thus,the actual UTXOs are shown below:
+
 > - Arjun -> Me 0.4 BTC
 > - Raj -> Me 0.3 BTC
 > - Bob -> Me 0.3 BTC
@@ -141,19 +145,21 @@ The following are UTXOs:
 **Cryptocurrency Wallets**
 
 Now,how does blockchain calculate the total currency that u are holding?
+
 It checks all those transactions in which I am recieving BTC. Example: Arjun gave me 0.4 BTC.In similar way,it calculates other transactions in which I am recieving money and sums it up.Thus,now we have 1.1 BTC(addition of all).Care is taken that those transactions which are already used up are not counted and those transaction in which I am paying money(Me -> Coffee 0.5 BTC) is also not counted.
-
-<!-- <img src="/keys.jpg" alt="Alt text" title="Optional title"> -->
-
-![BLOCKCHAIN](keys.jpg)
 
 **Private key and Public key**
 
-Private Key -----> Public Key
-| |
-| |
-| |
-|<---Message------->Verification
-|--->Signature---> function
-|
-Yes/No
+**SegWit: Segregated Witness**
+
+The size of a block is 1MB.If we increase the size of block,then it will acquire larger bandwidth to travel.It will occupy more space and the system will slow down.
+Image
+Now,we sent signature and public key seperately.Thus,space is saved in the block and more transactions can be accomodated in the block.
+
+**Public Key vs Bitcoin address**
+
+Public key is used if user wants to send bitcoin to someone.
+Bitcoin address is derived from public key using SHA256 algorithm.It is used if a user wants to accept bitcoin from someone.It was created so that hackers cannot hack public key and generate private key from it.Thus,it adds an extra layer of security.
+
+**HD: Hierarchical Deterministic Wallets**
+It is easy to track down bitcoin address.Thus,concept of HD wallets was introduced.
