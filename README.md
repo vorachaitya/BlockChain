@@ -147,13 +147,6 @@ It checks all those transactions in which I am recieving BTC. Example: Arjun gav
 
 ![BLOCKCHAIN](keys.jpg)
 
-**Private key and Public key**
 
-Private Key -----> Public Key
-| |
-| |
-| |
-|<---Message------->Verification
-|--->Signature---> function
-|
-Yes/No
+**Private key and Public key**
+![keys](https://user-images.githubusercontent.com/90527884/212564511-1222f1f1-089f-4432-a89a-ae9e1a3952b3.jpg)
