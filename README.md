@@ -156,13 +156,16 @@ It checks all those transactions in which I am recieving BTC. Example: Arjun gav
 The size of a block is 1MB.If we increase the size of block,then it will acquire larger bandwidth to travel.It will occupy more space and the system will slow down.
 Image
 Now,we sent signature and public key seperately.Thus,space is saved in the block and more transactions can be accomodated in the block.
+![SegWit](https://user-images.githubusercontent.com/90527884/212564818-a06a7d3e-5d8a-4d7a-b22b-48f02c3ddbd5.jpg)
 
 **Public Key vs Bitcoin address**
 
-**Public key** is used if user wants to send bitcoin to someone.
+Public key is used if user wants to send bitcoin to someone.
 
-**Bitcoin address** is derived from public key using SHA256 algorithm.It is used if a user wants to accept bitcoin from someone.It was created so that hackers cannot hack public key and generate private key from it.Thus,it adds an extra layer of security.
+Bitcoin address is derived from public key using SHA256 algorithm.It is used if a user wants to accept bitcoin from someone.It was created so that hackers cannot hack public key and generate private key from it.Thus,it adds an extra layer of security.
+![Bitcoin_address](https://user-images.githubusercontent.com/90527884/212564831-d438364e-1fd8-4a0c-9c1d-0193e9a50b2e.jpg)
 
 **HD: Hierarchical Deterministic Wallets**
 
 It is easy to track down bitcoin address.Thus,concept of HD wallets was introduced.
+![HD_Wallet](https://user-images.githubusercontent.com/90527884/212564870-81340f84-d3ac-42a0-9cb2-fb32692a6b83.jpg)
