@@ -98,3 +98,59 @@ Nonce is a 32 bit number.
 >   Thus,we have 10^77 possible hashes but we can only generate 4 billion nonces.
 
 So what the miners do when all the nonce get exhausted and miners have not hit the target?
+To avoid the above problem,we introduce a new field called "Timestamp" in our block.
+
+**_Timestamp_**: Now, timestamp along with nonce,block number,data and prev hash is added in the SHA256 algorithm which gives us the hash of the block.Timestamp calculates time from the time when unit was created.Thus, it keeps on changing every second and since it is also passed in SHA256 algorithm,thus the hash generated also keeps on changing every second.
+
+A miner exhausts 4 billion nonce in 40sec.Thus,it will exhaust 0.1 billion nonce in 1sec.After 1sec,all the nonce that have exhausted previosuly can again be reused as the timestamp has changed.Thus,due to avalanche effect,the hash generated would be different and can be used to match the target.
+
+Current hashing rate is 180 million trillion hashes/sec.Therefore, 4x10^9 nonce will be covered in = (4x10^9)/(10^6x10^12)= 4x10^-9 sec which is less than 1sec.Thus before even timestamp changes(after 1sec),all the nonces have been exhausted by the miner.
+
+So what should miner do till 1sec is reached? Should they wait for timestamp to change?
+
+**Mempool**: Mempool is that area where all unconfirmed transactions are present.Thousands of transactions can be done in mempool.Miners pick transactions from these area and then mine to add them in the blockchain.
+Every transaction has a transaction id and fees that we have to pay to miners. Thus,miners will choose those transactions first for mining which pay them more fees.
+
+Once miner picks a transaction,let's say it has picked 4 transactions,then it adds all those picked transactions to the data filed in it's own block.Now,it first mines the transaction with highest fee in the transaction field of it's block.But as we know,it exhausts all the nonces in less then 1sec.
+
+So what should miner do till 1sec is reached? Should they wait for timestamp to change?
+No,now it will replace the transaction with lowest fee in the transaction field of it's bock with the transaction with fee just lower than the transaction with lowest fee in the transaction field.As it has replaced a transaction,due to avalanche effect,the hash will be changed and miners can now use all the nonces again without waiting for the completion of 1sec.It will keep repeating this process till timestamp changes.Once timestamp changes,it will replace the transaction with lowest fee in it's block with transaction(present in mempool but not miner's block) of highest fee.Again,same process will be repeated.
+
+If fee paid to miner is very less,then no miner will pickup that transaction and after 72 hours,that transaction will be removed from mempool.Thus,that transaction will never be confirmed.
+
+**Transaction and UTXOs**
+
+UTXOs stnad for "Unspent Transaction Output".Let's us understand with an example:
+The following are UTXOs:
+
+> - Arjun -> Me 0.4 BTC
+> - Raj -> Me 0.3 BTC
+> - Alice -> Me 0.7 BTC
+> - Bob -> Me 0.3 BTC
+>   Now let's suppose I want to buy a coffee of 0.5 BTC.So,I will choose UTXO of Alice.0.5 BTC will be spent for coffee and remaining 0.2 BTC will be returned back to me.Thus,updated UTXOs are:
+> - Arjun -> Me 0.4 BTC
+> - Raj -> Me 0.3 BTC
+> - Bob -> Me 0.3 BTC
+> - Me -> Me 0.2 BTC
+>   But in actual,I get only 0.1 BTC.The remaining 0.1 BTC is spent in the form of Transaction fee.Transaction fee is given to miners.Thus,the actual UTXOs are shown below:
+> - Arjun -> Me 0.4 BTC
+> - Raj -> Me 0.3 BTC
+> - Bob -> Me 0.3 BTC
+> - Me -> Me 0.1 BTC
+
+**Cryptocurrency Wallets**
+
+Now,how does blockchain calculate the total currency that u are holding?
+It checks all those transactions in which I am recieving BTC. Example: Arjun gave me 0.4 BTC.In similar way,it calculates other transactions in which I am recieving money and sums it up.Thus,now we have 1.1 BTC(addition of all).Care is taken that those transactions which are already used up are not counted and those transaction in which I am paying money(Me -> Coffee 0.5 BTC) is also not counted.
+<img src="/keys.jpg" alt="Alt text" title="Optional title">
+
+**Private key and Public key**
+
+Private Key -----> Public Key
+| |
+| |
+| |
+|<---Message------->Verification
+|--->Signature---> function
+|
+Yes/No
