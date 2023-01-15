@@ -159,8 +159,10 @@ Now,we sent signature and public key seperately.Thus,space is saved in the block
 
 **Public Key vs Bitcoin address**
 
-Public key is used if user wants to send bitcoin to someone.
-Bitcoin address is derived from public key using SHA256 algorithm.It is used if a user wants to accept bitcoin from someone.It was created so that hackers cannot hack public key and generate private key from it.Thus,it adds an extra layer of security.
+**Public key** is used if user wants to send bitcoin to someone.
+
+**Bitcoin address** is derived from public key using SHA256 algorithm.It is used if a user wants to accept bitcoin from someone.It was created so that hackers cannot hack public key and generate private key from it.Thus,it adds an extra layer of security.
 
 **HD: Hierarchical Deterministic Wallets**
+
 It is easy to track down bitcoin address.Thus,concept of HD wallets was introduced.
