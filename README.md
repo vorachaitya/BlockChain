@@ -170,3 +170,15 @@ Bitcoin address is derived from public key using SHA256 algorithm.It is used if 
 
 It is easy to track down bitcoin address.Thus,concept of HD wallets was introduced.
 ![HD_Wallet](https://user-images.githubusercontent.com/90527884/212564870-81340f84-d3ac-42a0-9cb2-fb32692a6b83.jpg)
+
+# **_Module C: Ethereum_**
+
+Ethereum is an open-source blockchain-based platform.It was invented by "Vitalik Buterin".Just like bitcoin,ethereum provides us with ether with which we can do transactions.
+
+**Ethereum Nodes**
+
+> **Full Node**: It locally stores an entire copy of blockchain and is responsible for verification and validation of blocks.Generally,miner is called Full Node.
+
+> **Light Node**: Those nodes who don't have much storage and just want to perform transactions are called as Light Node.It stores only the block header and is dependent on full node.It is for low capacity devices which cannot afford to store gigabytes of data.
+
+> **Archive Node**: It stores everything kept in the full node and built an archive of historical data.Thus,it requires terabytes of diskspace.
