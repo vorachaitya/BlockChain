@@ -149,6 +149,7 @@ Now,how does blockchain calculate the total currency that u are holding?
 It checks all those transactions in which I am recieving BTC. Example: Arjun gave me 0.4 BTC.In similar way,it calculates other transactions in which I am recieving money and sums it up.Thus,now we have 1.1 BTC(addition of all).Care is taken that those transactions which are already used up are not counted and those transaction in which I am paying money(Me -> Coffee 0.5 BTC) is also not counted.
 
 **Private key and Public key**
+
 ![keys](https://user-images.githubusercontent.com/90527884/212564511-1222f1f1-089f-4432-a89a-ae9e1a3952b3.jpg)
 
 **SegWit: Segregated Witness**
