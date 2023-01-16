@@ -268,3 +268,17 @@ A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
 **Initial Coin Offering(ICO):**
 
 ![ICO](https://user-images.githubusercontent.com/90527884/212683935-a3f47fe5-a3c5-4800-969a-3da8f79db4e2.jpg)
+
+**ETH 2.0**
+
+> - It is scalable,i.e,more number of nodes can be added to the blockchain as compared to ETH 1.0
+> - It is more secure because since more number of nodes can be added,therefore before adding a block,it will be verified by those extra nodes as compared to ETH 1.0
+> - It is more sustainable as the energy consumption is low.
+
+Two major upgrades of ETH2 are Proof of stake(POS) and Sharding.
+
+**Proof of stake(POS):** Here,there are no miners present.Instead,there are validators.If a person wants to become a validator,he has to keep certain amount of his ethers at stake and give it to the system.Minimum stake is 32 eth.
+
+If a validator performs attachtation(attaching blocks together) correctly,then he given back his eth+transaction fee.But,if he tries to do some malicious activity,then he won't get his ether(kept at stake) back and not get any transaction fee as well.
+
+If there are 5 persons let's say A,B,C,D,E who want to become validator,then system will randomly select a person and make him validator.Those person who will keep more ether at stake has higher chances of being selected randomly as validator.
