@@ -265,4 +265,4 @@ A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
 
 ![Soft_fork](https://user-images.githubusercontent.com/90527884/212682604-00f7b3f3-5934-45eb-a9bc-40076dd172d0.jpg)
 
-
+**Initial Coin Offering(ICO):**
