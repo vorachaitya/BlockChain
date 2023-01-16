@@ -239,16 +239,16 @@ Let say A wants to send B 2ETH.So what will be the total fees that A has to pay?
 > - Case 1:When transaction gas limit is 21,000 units.
 >   A sets the gas price per unit=100 gwei
 >   Transaction gas limit=21,000 units
->   Total fee will be:Gas units(limit)\*Gas price per unit
-
-Total fee will be:21,000\*100=210,0000 gwei or 0.0021 ETH
+>   Total fee will be:Gas units(limit)xGas price per unit
+>
+> * Total fee will be:21,000x100=210,0000 gwei or 0.0021 ETH
 
 > - Case 2:When gas transaction limit is less than 21,000 units
 >   Transaction gas limit=20,000 units
-
-Therefore,transaction will be failed.
+>
+> * Therefore,transaction will be failed.
 
 > - Case 3:When gas transaction limit is greater than 21,000 units
 >   Transaction gas limit=22,000 units
-
-22,000-21,000=1,000 units will be returned
+>
+> * 22,000-21,000=1,000 units will be returned
