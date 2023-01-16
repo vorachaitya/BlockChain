@@ -217,3 +217,38 @@ Those applications which run in decentralized manner in the form of P2P network 
 ![Decentralised_apps](https://user-images.githubusercontent.com/90527884/212640074-5761600f-dce7-49ab-ae91-6cbc2802e211.jpg)
 
 **Ethereum Virtual Machine(EVM):** Whenever we run a decentralised application,it doesn't run directly on our computer instead it runs on EVM.This EVM doesn't have access to our computer and thus cannot steal any data from our computer.Thus,our system is protected from attack of virus and hackers.
+
+**Ethereum Gas**
+
+If we want to run some smart contract/transaction on our Ethereum Blockchain,then ethereum gas is required.Any transaction that modifies the blockchain costs gas.The user that generated the transaction pays for the gas.Community has already assigned gas values to perform operation.Each different operation has it's own assigned gas value.Example:
+
+> - Addition has 3 gas
+> - Subtraction has 3 gas
+> - Equal to has 3 gas
+
+If operation is 10+3-6=?
+Thus,total gas required is 3+3+3=9 gas
+
+**Gas Price:** It is the amount the sender wants to pay per unit of gas to get the transaction mined.gasPrice is set by the sender.The higher the gas price,the faster the transaction will be mined.It is just like the transaction in Bitcoin.
+
+Gas prices are denoted in gwei.(1 gwei=10^-9ETH)
+
+**Gas Limit:** It is the maximum gas the transaction can consume.It is set by the sender.
+Let say A wants to send B 2ETH.So what will be the total fees that A has to pay?
+
+> - Case 1:When transaction gas limit is 21,000 units.
+>   A sets the gas price per unit=100 gwei
+>   Transaction gas limit=21,000 units
+>   Total fee will be:Gas units(limit)\*Gas price per unit
+
+Total fee will be:21,000\*100=210,0000 gwei or 0.0021 ETH
+
+> - Case 2:When gas transaction limit is less than 21,000 units
+>   Transaction gas limit=20,000 units
+
+Therefore,transaction will be failed.
+
+> - Case 3:When gas transaction limit is greater than 21,000 units
+>   Transaction gas limit=22,000 units
+
+22,000-21,000=1,000 units will be returned
