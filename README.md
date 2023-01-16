@@ -236,9 +236,9 @@ Gas prices are denoted in gwei.(1 gwei=10^-9ETH)
 **Gas Limit:** It is the maximum gas the transaction can consume.It is set by the sender.
 Let say A wants to send B 2ETH.So what will be the total fees that A has to pay?
 
+A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
+
 > - Case 1:When transaction gas limit is 21,000 units.
->   A sets the gas price per unit=100 gwei.
->   Transaction gas limit=21,000 units.
 >   Total fee will be:Gas units(limit)xGas price per unit
 >
 > * Total fee will be:21,000x100=210,0000 gwei or 0.0021 ETH
