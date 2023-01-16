@@ -209,3 +209,7 @@ Each node has following:
 
 > - Current state of all smart contracts.
 > - History of both transactions and smart contract.
+
+**Decentralized Applications: Dapps**
+
+Those applications which run in decentralized manner in the form of P2P network are known as decentralized applications.Dapps are made using smart contract+front end.Smart contract work as backend.
