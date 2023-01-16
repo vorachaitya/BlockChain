@@ -213,3 +213,5 @@ Each node has following:
 **Decentralized Applications: Dapps**
 
 Those applications which run in decentralized manner in the form of P2P network are known as decentralized applications.Dapps are made using smart contract+front end.Smart contract work as backend.
+
+![Decentralised_apps](https://user-images.githubusercontent.com/90527884/212640074-5761600f-dce7-49ab-ae91-6cbc2802e211.jpg)
