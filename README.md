@@ -194,3 +194,18 @@ Types of Ethereum accounts:
 > - **Contract Account(CA)**: It is controlled by Contract code.
 
 ![EOA vs CA](https://user-images.githubusercontent.com/90527884/212632838-c0afe0bc-5789-4316-9a8b-1afc2c67a326.jpg)
+
+**Smart Contract**
+
+It is a program that runs on our Ethereum blockchain.
+
+**Turing complete** means we can write the logic in our program whereas **Not Turing complete** means we cannot write logic in our program.We can implement concept of loops in Turing complete whereas we cannot in Not Turing complete.
+
+Why can we use smart contract in Ethereum but not in Bitcoin?
+
+Bitcoin uses Bitcoin script which is Not Turing complete whereas Ethereum uses Solidity which is Turing complete.Thus,we can use smart contract in Ethereum but not in Bitcoin.
+
+Each node has following:
+
+> - Current state of all smart contracts.
+> - History of both transactions and smart contract.
