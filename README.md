@@ -255,6 +255,8 @@ A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
 
 **Decentralized Autonomous Organisation(DAO):** DAO is a program written on smart contract.If there are few things that repetitive in nature and which doesn't require much logic,then we can simply add them in smart contract.It will work exactly same as an organisation and will also maintain a heirarchy.It works on it's won and there is no human intervention.Thus,it is an autonomous organisation.
 
+![DAO](https://user-images.githubusercontent.com/90527884/212657647-d5f67da0-c5af-4fa8-accc-0510bcff1e40.jpg)
+
 **Hard Fork**
 
 During a hard fork,software implementing a protocol and its mining procedures is upgraded.Once a user upgrades their software,that version rejects all transactions from older software,effectively creating a new branch of the blockchain.However,those users who retain the old software continue to process transactions.
