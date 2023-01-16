@@ -215,3 +215,5 @@ Each node has following:
 Those applications which run in decentralized manner in the form of P2P network are known as decentralized applications.Dapps are made using smart contract+front end.Smart contract work as backend.
 
 ![Decentralised_apps](https://user-images.githubusercontent.com/90527884/212640074-5761600f-dce7-49ab-ae91-6cbc2802e211.jpg)
+
+**Ethereum Virtual Machine(EVM):** Whenever we run a decentralised application,it doesn't run directly on our computer instead it runs on EVM.This EVM doesn't have access to our computer and thus cannot steal any data from our computer.Thus,our system is protected from attack of virus and hackers.
