@@ -182,3 +182,13 @@ Ethereum is an open-source blockchain-based platform.It was invented by "Vitalik
 > **Light Node**: Those nodes who don't have much storage and just want to perform transactions are called as Light Node.It stores only the block header and is dependent on full node.It is for low capacity devices which cannot afford to store gigabytes of data.
 
 > **Archive Node**: It stores everything kept in the full node and built an archive of historical data.Thus,it requires terabytes of diskspace.
+
+**Ethereum Account**
+
+An Ethereum account is an entity with an ether(ETH) balance that can send or recieve transactions on Ethereum.
+
+Types of Ethereum accounts:
+
+> - **Externally Owned Accounts(EOA)**: EOA account is created as soon as we create a wallet.Private key helps to open the wallet.EOA allows us to check balance,send/recieve transaction,smart contract.
+
+> - **Contract Account(CA)**: It is controlled by Contract code.
