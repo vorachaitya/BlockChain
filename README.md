@@ -262,3 +262,7 @@ A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
 ![hard_fork](https://user-images.githubusercontent.com/90527884/212661502-592f256f-3a0d-4ef3-b6d2-af65c57dcccb.jpg)
 
 **Soft Fork:** Soft forks are a change to protocol,but the end product remains unchanged.A soft fork is a backward-compatible upgrade,meaning that the upgraded nodes can still communicate with the non-upgraded ones.Old nodes(not upgraded nodes) could still validate blocks and transactions(the formatting didn't break the rules),but they just wouldn't understand them.
+
+![Soft_fork](https://user-images.githubusercontent.com/90527884/212682604-00f7b3f3-5934-45eb-a9bc-40076dd172d0.jpg)
+
+
