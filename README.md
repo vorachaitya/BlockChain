@@ -282,3 +282,5 @@ Two major upgrades of ETH2 are Proof of stake(POS) and Sharding.
 If a validator performs attachtation(attaching blocks together) correctly,then he given back his eth+transaction fee.But,if he tries to do some malicious activity,then he won't get his ether(kept at stake) back and not get any transaction fee as well.
 
 If there are 5 persons let's say A,B,C,D,E who want to become validator,then system will randomly select a person and make him validator.Those person who will keep more ether at stake has higher chances of being selected randomly as validator.
+
+![POS](https://user-images.githubusercontent.com/90527884/212688850-f4860ef0-cd5f-46ea-b337-2c9ff4423466.jpg)
