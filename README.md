@@ -192,3 +192,5 @@ Types of Ethereum accounts:
 > - **Externally Owned Accounts(EOA)**: EOA account is created as soon as we create a wallet.Private key helps to open the wallet.EOA allows us to check balance,send/recieve transaction,smart contract.
 
 > - **Contract Account(CA)**: It is controlled by Contract code.
+
+![EOA vs CA](https://user-images.githubusercontent.com/90527884/212632838-c0afe0bc-5789-4316-9a8b-1afc2c67a326.jpg)
