@@ -183,11 +183,11 @@ Bitcoin address is derived from public key using SHA256 algorithm.It is used if 
 It is easy to track down bitcoin address.Thus,concept of HD wallets was introduced.
 ![HD_Wallet](https://user-images.githubusercontent.com/90527884/212564870-81340f84-d3ac-42a0-9cb2-fb32692a6b83.jpg)
 
-# **_Module C: Ethereum_**
+## Module C: Ethereum
 
 Ethereum is an open-source blockchain-based platform.It was invented by "Vitalik Buterin".Just like bitcoin,ethereum provides us with ether with which we can do transactions.
 
-**Ethereum Nodes**
+#### Ethereum Nodes
 
 > **Full Node**: It locally stores an entire copy of blockchain and is responsible for verification and validation of blocks.Generally,miner is called Full Node.
 
@@ -195,7 +195,7 @@ Ethereum is an open-source blockchain-based platform.It was invented by "Vitalik
 
 > **Archive Node**: It stores everything kept in the full node and built an archive of historical data.Thus,it requires terabytes of diskspace.
 
-**Ethereum Account**
+#### Ethereum Account
 
 An Ethereum account is an entity with an ether(ETH) balance that can send or recieve transactions on Ethereum.
 
@@ -207,7 +207,7 @@ Types of Ethereum accounts:
 
 ![EOA vs CA](https://user-images.githubusercontent.com/90527884/212632838-c0afe0bc-5789-4316-9a8b-1afc2c67a326.jpg)
 
-**Smart Contract**
+#### Smart Contract
 
 It is a program that runs on our Ethereum blockchain.
 
@@ -222,15 +222,17 @@ Each node has following:
 > - Current state of all smart contracts.
 > - History of both transactions and smart contract.
 
-**Decentralized Applications: Dapps**
+#### Decentralized Applications: Dapps
 
 Those applications which run in decentralized manner in the form of P2P network are known as decentralized applications.Dapps are made using smart contract+front end.Smart contract work as backend.
 
 ![Decentralised_apps](https://user-images.githubusercontent.com/90527884/212640074-5761600f-dce7-49ab-ae91-6cbc2802e211.jpg)
 
-**Ethereum Virtual Machine(EVM):** Whenever we run a decentralised application,it doesn't run directly on our computer instead it runs on EVM.This EVM doesn't have access to our computer and thus cannot steal any data from our computer.Thus,our system is protected from attack of virus and hackers.
+#### Ethereum Virtual Machine(EVM)
 
-**Ethereum Gas**
+Whenever we run a decentralised application,it doesn't run directly on our computer instead it runs on EVM.This EVM doesn't have access to our computer and thus cannot steal any data from our computer.Thus,our system is protected from attack of virus and hackers.
+
+#### Ethereum Gas
 
 If we want to run some smart contract/transaction on our Ethereum Blockchain,then ethereum gas is required.Any transaction that modifies the blockchain costs gas.The user that generated the transaction pays for the gas.Community has already assigned gas values to perform operation.Each different operation has it's own assigned gas value.Example:
 
@@ -241,11 +243,15 @@ If we want to run some smart contract/transaction on our Ethereum Blockchain,the
 If operation is 10+3-6=?
 Thus,total gas required is 3+3+3=9 gas
 
-**Gas Price:** It is the amount the sender wants to pay per unit of gas to get the transaction mined.gasPrice is set by the sender.The higher the gas price,the faster the transaction will be mined.It is just like the transaction in Bitcoin.
+##### Gas Price
+
+It is the amount the sender wants to pay per unit of gas to get the transaction mined.gasPrice is set by the sender.The higher the gas price,the faster the transaction will be mined.It is just like the transaction in Bitcoin.
 
 Gas prices are denoted in gwei.(1 gwei=10^-9ETH)
 
-**Gas Limit:** It is the maximum gas the transaction can consume.It is set by the sender.
+##### Gas Limit
+
+It is the maximum gas the transaction can consume.It is set by the sender.
 Let say A wants to send B 2ETH.So what will be the total fees that A has to pay?
 
 A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
@@ -265,23 +271,29 @@ A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
 >
 > * 22,000-21,000=1,000 units will be returned
 
-**Decentralized Autonomous Organisation(DAO):** DAO is a program written on smart contract.If there are few things that repetitive in nature and which doesn't require much logic,then we can simply add them in smart contract.It will work exactly same as an organisation and will also maintain a heirarchy.It works on it's won and there is no human intervention.Thus,it is an autonomous organisation.
+#### Decentralized Autonomous Organisation(DAO)
+
+DAO is a program written on smart contract.If there are few things that repetitive in nature and which doesn't require much logic,then we can simply add them in smart contract.It will work exactly same as an organisation and will also maintain a heirarchy.It works on it's won and there is no human intervention.Thus,it is an autonomous organisation.
 
 ![DAO](https://user-images.githubusercontent.com/90527884/212657647-d5f67da0-c5af-4fa8-accc-0510bcff1e40.jpg)
 
-**Hard Fork:** During a hard fork,software implementing a protocol and its mining procedures is upgraded.Once a user upgrades their software,that version rejects all transactions from older software,effectively creating a new branch of the blockchain.However,those users who retain the old software continue to process transactions.Changes made here irreversible.
+#### Hard Fork
+
+During a hard fork,software implementing a protocol and its mining procedures is upgraded.Once a user upgrades their software,that version rejects all transactions from older software,effectively creating a new branch of the blockchain.However,those users who retain the old software continue to process transactions.Changes made here irreversible.
 
 ![hard_fork](https://user-images.githubusercontent.com/90527884/212661502-592f256f-3a0d-4ef3-b6d2-af65c57dcccb.jpg)
 
-**Soft Fork:** Soft forks are a change to protocol,but the end product remains unchanged.A soft fork is a backward-compatible upgrade,meaning that the upgraded nodes can still communicate with the non-upgraded ones.Old nodes(not upgraded nodes) could still validate blocks and transactions(the formatting didn't break the rules),but they just wouldn't understand them.
+#### Soft Fork
+
+Soft forks are a change to protocol,but the end product remains unchanged.A soft fork is a backward-compatible upgrade,meaning that the upgraded nodes can still communicate with the non-upgraded ones.Old nodes(not upgraded nodes) could still validate blocks and transactions(the formatting didn't break the rules),but they just wouldn't understand them.
 
 ![Soft_fork](https://user-images.githubusercontent.com/90527884/212682604-00f7b3f3-5934-45eb-a9bc-40076dd172d0.jpg)
 
-**Initial Coin Offering(ICO):**
+#### Initial Coin Offering(ICO)
 
 ![ICO](https://user-images.githubusercontent.com/90527884/212683935-a3f47fe5-a3c5-4800-969a-3da8f79db4e2.jpg)
 
-**ETH 2.0**
+#### ETH 2.0
 
 > - It is scalable,i.e,more number of nodes can be added to the blockchain as compared to ETH 1.0
 > - It is more secure because since more number of nodes can be added,therefore before adding a block,it will be verified by those extra nodes as compared to ETH 1.0
@@ -289,7 +301,9 @@ A sets the gas price per unit=100 gwei.Transaction gas limit=21,000 units.
 
 Two major upgrades of ETH2 are Proof of stake(POS) and Sharding.
 
-**Proof of stake(POS):** Here,there are no miners present.Instead,there are validators.If a person wants to become a validator,he has to keep certain amount of his ethers at stake and give it to the system.Minimum stake is 32 eth.
+#### Proof of stake(POS)
+
+Here,there are no miners present.Instead,there are validators.If a person wants to become a validator,he has to keep certain amount of his ethers at stake and give it to the system.Minimum stake is 32 eth.
 
 If a validator performs attachtation(attaching blocks together) correctly,then he given back his eth+transaction fee.But,if he tries to do some malicious activity,then he won't get his ether(kept at stake) back and not get any transaction fee as well.
 
@@ -297,7 +311,9 @@ If there are 5 persons let's say A,B,C,D,E who want to become validator,then sys
 
 ![POS](https://user-images.githubusercontent.com/90527884/212688850-f4860ef0-cd5f-46ea-b337-2c9ff4423466.jpg)
 
-**Sharding:** In consensus protocol,lot of time of miners was wasted in verifying and validating blocks mined by other miners.Thus,the efficiency of miners decreased and less number of transactions could be done per second.
+#### Sharding
+
+In consensus protocol,lot of time of miners was wasted in verifying and validating blocks mined by other miners.Thus,the efficiency of miners decreased and less number of transactions could be done per second.
 
 Instead,in sharding,we divide database/blockchain into smaller subsets.Thus,now miners had to validate only that part of database/blockchain instead of entire complete blockchai.This reduced the workload on miners and now,they can give more time on mininig and larger number of transactions could be processed per second.
 
@@ -308,5 +324,7 @@ Major benefits of sharding:
 - More validators will join.
 - Energy consumption will reduce.
 
-**AltCoins:** All cryptocurrency available in market except Bitcoin are termed as "Altcoins".AtCoins are coins other than Bitcoins.Example: LiteCoin,Theta,BinanceCoin.
+#### AltCoins
+
+All cryptocurrency available in market except Bitcoin are termed as "Altcoins".AtCoins are coins other than Bitcoins.Example: LiteCoin,Theta,BinanceCoin.
 Ethereum and BinanceCoin were the largest altcoins by market capitalization as of 2021.
