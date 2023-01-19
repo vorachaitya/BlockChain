@@ -1,8 +1,10 @@
-# BlockChain
+# Introduction
+
+This repository contains all the basic knowledge required to study BlockChain.It is divided into three modules namely: Blockchain,Cryptocurrency and Ethereum.
 
 # **_Module A:Blockchain_**
 
-**Why to study Blockchain?**
+## **Why to study Blockchain?**
 
 - It is a disruptive technology, i.e,it has the power to change a traditional approach into a new enhanced technology.
 - It has gained trust of people after financial crisis of USA in the year 2008.
