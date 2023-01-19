@@ -284,3 +284,17 @@ If a validator performs attachtation(attaching blocks together) correctly,then h
 If there are 5 persons let's say A,B,C,D,E who want to become validator,then system will randomly select a person and make him validator.Those person who will keep more ether at stake has higher chances of being selected randomly as validator.
 
 ![POS](https://user-images.githubusercontent.com/90527884/212688850-f4860ef0-cd5f-46ea-b337-2c9ff4423466.jpg)
+
+**Sharding:** In consensus protocol,lot of time of miners was wasted in verifying and validating blocks mined by other miners.Thus,the efficiency of miners decreased and less number of transactions could be done per second.
+
+Instead,in sharding,we divide database/blockchain into smaller subsets.Thus,now miners had to validate only that part of database/blockchain instead of entire complete blockchai.This reduced the workload on miners and now,they can give more time on mininig and larger number of transactions could be processed per second.
+
+Major benefits of sharding:
+
+- Transactions per second increases.
+- Powerful and expensive computers will not be needed.
+- More validators will join.
+- Energy consumption will reduce.
+
+**AltCoins:** All cryptocurrency available in market except Bitcoin are termed as "Altcoins".AtCoins are coins other than Bitcoins.Example: LiteCoin,Theta,BinanceCoin.
+Ethereum and BinanceCoin were the largest altcoins by market capitalization as of 2021.
