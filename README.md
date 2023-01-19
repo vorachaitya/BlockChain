@@ -62,23 +62,25 @@ It will accept only those blockchain which will have the longest blockchain.Thus
 
 The Consensus Protocol of Blockchain is much better than the Byzantine Fault Tolerance as Consensus Protocol only needs a 51% majority while Byzantine Fault Tolerance needs approximately 66%.All the transaction in the Orphan block will be dropped and the miner that had mined will not get any reward.So that's why wait for the 6 confirmations before assuming payment to be successful.
 
-# **_Module B:Cryptocurrency_**
+## Module B:Cryptocurrency
 
-**What is Bitcoin?**
+#### What is Bitcoin?
 
 Bitcoin is the first cryptocurrency to be invented in the year 2008.Blockchain is a technology whereas Bitcoin is a protocol that tells us how to work on blockchain as a technology,i.e,when miners should be rewarded,which consensus protocols should be followed,etc.
 
-**What is Bitcoin's Monetary Policy?**
+#### What is Bitcoin's Monetary Policy?
 
 It is necessary to maintain the supply of money.Supply cap of Bitcoin is 21 million.Bitcoin uses Halving technique,i.e,every 4 years the new number of bitcoins that can be produced are half the number than those before 4years.Thus,no more bitcoins can be produced after the year 2140.Block frequency states that on an average,it will take 10 minutes to create a new block.
 
-**How Mining works:The Nonce**
+#### How Mining works:The Nonce
 
 The hash of the block is generated when we add block number,data and prev hash in the SHA256 algorithm which gives us the hash of the block.Mathematical problem to be solved by the miner is to generate this hash,i.e, miners are given a target value. They have to generate hash in such way that it is less than or equal to the given target value. If hash is not less or equal to target value,then block cannot exist and miner cannot mine the block.If they reach the target value,then block is mined successfully.
 
 Nonce is responsible for generating the hash.Different values of nonce have different hash values,out of which one hash value of some nonce will match the target value and block will be mined successfully.Now,we will add nonce along with block number,data and prev hash in the SHA256 algorithm which will gives us the hash value of the block.Thus,nonce simply is a mathematical number which miners use to solve a mathematical problem.When they find a nonce that reaches the target value,mining is stopped and block is added successfully.
 
-**_Target_** :Target is a number used in mining.It is a number that block hash must be below for the block to be added on to the blockchain.The target adjusts every 2016 blocks(roughly two weeks) to try and ensure that blocks are mined once every 10 minutes on average.
+#### Target
+
+Target is a number used in mining.It is a number that block hash must be below for the block to be added on to the blockchain.The target adjusts every 2016 blocks(roughly two weeks) to try and ensure that blocks are mined once every 10 minutes on average.
 
 **CPU vs GPU vs ASIC**
 
@@ -88,13 +90,13 @@ Hash rates are as follows:
 > - GPUs < 1 GH/s
 > - ASIC > 1000 GH/s
 
-**Mining Pools**
+#### Mining Pools
 
 Mining pool creates a pool of miner's network where they together solve a problem.Thus,mining power of each individual increases by which they can now compete with big miners in the market.Also those individuals who don't know mining can be a part of the mining pool by paying a minimal fee.Also if a mining network has earned a reward,reward won't be split equally amongst it's miners.Reward would be distributed based on the hashing power of every individual of the mining pool,i.e, miner with more hashing power gets more reward because it has generated more hashes to meet the target thereby contributing more.
 
 Also,the different network don't work on the same mathematical problem else even if one network solves the problem,it will get rewarded and the power,electricity of other networks(mining pools) would be wasted.Instead,every network(mining pool) is assigned a range of nonce and they solve mathematical problem based by changing nonce in that range only.
 
-**Nonce Range**
+#### Nonce Range
 
 Nonce is a 32 bit number.
 
@@ -106,7 +108,9 @@ Nonce is a 32 bit number.
 So what the miners do when all the nonce get exhausted and miners have not hit the target?
 To avoid the above problem,we introduce a new field called "Timestamp" in our block.
 
-**_Timestamp_**: Now, timestamp along with nonce,block number,data and prev hash is added in the SHA256 algorithm which gives us the hash of the block.Timestamp calculates time from the time when unit was created.Thus, it keeps on changing every second and since it is also passed in SHA256 algorithm,thus the hash generated also keeps on changing every second.
+#### Timestamp
+
+Now, timestamp along with nonce,block number,data and prev hash is added in the SHA256 algorithm which gives us the hash of the block.Timestamp calculates time from the time when unit was created.Thus, it keeps on changing every second and since it is also passed in SHA256 algorithm,thus the hash generated also keeps on changing every second.
 
 A miner exhausts 4 billion nonce in 40sec.Thus,it will exhaust 0.1 billion nonce in 1sec.After 1sec,all the nonce that have exhausted previosuly can again be reused as the timestamp has changed.Thus,due to avalanche effect,the hash generated would be different and can be used to match the target.
 
@@ -114,7 +118,9 @@ Current hashing rate is 180 million trillion hashes/sec.Therefore, 4x10^9 nonce 
 
 So what should miner do till 1sec is reached? Should they wait for timestamp to change?
 
-**Mempool**: Mempool is that area where all unconfirmed transactions are present.Thousands of transactions can be done in mempool.Miners pick transactions from these area and then mine to add them in the blockchain.
+#### Mempool
+
+Mempool is that area where all unconfirmed transactions are present.Thousands of transactions can be done in mempool.Miners pick transactions from these area and then mine to add them in the blockchain.
 Every transaction has a transaction id and fees that we have to pay to miners. Thus,miners will choose those transactions first for mining which pay them more fees.
 
 Once miner picks a transaction,let's say it has picked 4 transactions,then it adds all those picked transactions to the data filed in it's own block.Now,it first mines the transaction with highest fee in the transaction field of it's block.But as we know,it exhausts all the nonces in less then 1sec.
@@ -124,9 +130,9 @@ No,now it will replace the transaction with lowest fee in the transaction field 
 
 If fee paid to miner is very less,then no miner will pickup that transaction and after 72 hours,that transaction will be removed from mempool.Thus,that transaction will never be confirmed.
 
-**Transaction and UTXOs**
+#### Transaction and UTXOs
 
-UTXOs stnad for "Unspent Transaction Output".Let's us understand with an example:
+UTXOs stand for "Unspent Transaction Output".Let's us understand with an example:
 The following are UTXOs:
 
 > - Arjun -> Me 0.4 BTC
@@ -148,17 +154,17 @@ But in actual,I get only 0.1 BTC.The remaining 0.1 BTC is spent in the form of T
 > - Bob -> Me 0.3 BTC
 > - Me -> Me 0.1 BTC
 
-**Cryptocurrency Wallets**
+#### Cryptocurrency Wallets
 
 Now,how does blockchain calculate the total currency that u are holding?
 
 It checks all those transactions in which I am recieving BTC. Example: Arjun gave me 0.4 BTC.In similar way,it calculates other transactions in which I am recieving money and sums it up.Thus,now we have 1.1 BTC(addition of all).Care is taken that those transactions which are already used up are not counted and those transaction in which I am paying money(Me -> Coffee 0.5 BTC) is also not counted.
 
-**Private key and Public key**
+#### Private key and Public key
 
 ![keys](https://user-images.githubusercontent.com/90527884/212564511-1222f1f1-089f-4432-a89a-ae9e1a3952b3.jpg)
 
-**SegWit: Segregated Witness**
+#### SegWit: Segregated Witness
 
 The size of a block is 1MB.If we increase the size of block,then it will acquire larger bandwidth to travel.It will occupy more space and the system will slow down.
 Image
@@ -172,7 +178,7 @@ Public key is used if user wants to send bitcoin to someone.
 Bitcoin address is derived from public key using SHA256 algorithm.It is used if a user wants to accept bitcoin from someone.It was created so that hackers cannot hack public key and generate private key from it.Thus,it adds an extra layer of security.
 ![Bitcoin_address](https://user-images.githubusercontent.com/90527884/212564831-d438364e-1fd8-4a0c-9c1d-0193e9a50b2e.jpg)
 
-**HD: Hierarchical Deterministic Wallets**
+#### HD: Hierarchical Deterministic Wallets
 
 It is easy to track down bitcoin address.Thus,concept of HD wallets was introduced.
 ![HD_Wallet](https://user-images.githubusercontent.com/90527884/212564870-81340f84-d3ac-42a0-9cb2-fb32692a6b83.jpg)
