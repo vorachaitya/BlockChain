@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository contains all the knowledge about **BlockChain** from scratch.It is divided into three modules namely: Blockchain,Cryptocurrency and Ethereum.
+This repository contains all the knowledge about **BlockChain** from scratch.It is divided into three modules namely: **_Blockchain_**,**_Cryptocurrency_** and **_Ethereum_**.
 
 ## Module A:Blockchain
 
