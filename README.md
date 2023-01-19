@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 This repository contains all the basic knowledge required to study BlockChain.It is divided into three modules namely: Blockchain,Cryptocurrency and Ethereum.
 
